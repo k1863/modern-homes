@@ -1,0 +1,9 @@
+@import "animations";
+@import "mixins";
+@import "variables";
+@import "base";
+@import "typography";
+
+@import "../components/Navigation/NavigationStyles.scss";
+@import "../pages/Home/Home.Styles.scss";
+@import "../components/Header/HeaderStyles.scss";

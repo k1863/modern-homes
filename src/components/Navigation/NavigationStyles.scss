@@ -1,0 +1,39 @@
+.navigation {
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  padding: 0 10rem;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__item {
+    display: inline-block;
+    color: $color-primary-dark;
+    font-size: 1.4rem;
+    margin-top: 5rem;
+    width: 16.66%;
+    text-align: center;
+  }
+
+   &__item:hover {
+      color: $color-grey;
+      cursor: pointer;
+    }
+
+  &__logo-box {
+    width: 15rem;
+    position: absolute;
+    left: 50%;
+    margin-top: 2rem;
+    transform: translateX(-50%);
+  }
+
+  .push {
+    margin-left: 15rem;
+  }
+}
