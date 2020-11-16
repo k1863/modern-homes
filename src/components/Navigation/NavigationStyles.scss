@@ -3,11 +3,13 @@
   height: 15vh;
   position: relative;
   padding: 0 10rem;
+  background-color: $color-grey-light;
+  display: flex;
+  align-items: center;
 
   &__list {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     width: 100%;
   }
 
@@ -15,25 +17,23 @@
     display: inline-block;
     color: $color-primary-dark;
     font-size: 1.4rem;
-    margin-top: 5rem;
-    width: 16.66%;
+    flex: 0 0 10.67%;
     text-align: center;
   }
 
-   &__item:hover {
-      color: $color-grey;
-      cursor: pointer;
-    }
+  &__item:hover {
+    color: $color-grey;
+    cursor: pointer;
+  }
 
   &__logo-box {
     width: 15rem;
     position: absolute;
     left: 50%;
-    margin-top: 2rem;
     transform: translateX(-50%);
   }
 
   .push {
-    margin-left: 15rem;
+    margin-left: auto;
   }
 }

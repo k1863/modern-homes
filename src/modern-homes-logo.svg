@@ -1,1 +1,17 @@
-<svg id="graphics" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.85 265.83"><defs><style>.cls-1{fill:#9e8f70;}.cls-2{isolation:isolate;font-size:70.79px;fill:#6f7070;font-family:Poppins-ExtraBold, Poppins;font-weight:800;letter-spacing:-0.03em;}</style></defs><title>modern-homes-logo</title><path class="cls-1" d="M373.33,141.52v-69L362,77.07V47.35l-28.59-17V81.86l5.93-2.39V41.68L356.1,51.8V79.47l-5.41,2.16v-26l-5.93-3.65V84l-22.67,9.09V121l-11.34-4.55v64.26h39.94V146.06l-5.93-2.37v30.16H316.65V125.61l16.74,6.71v27.89H328V137l-5.88-2.36V167h17.26V134.7l39.42,15.81v23.34H362V157.42l5.41,2.17V167h5.93V155.15l-17.22-6.92v32.42h28.6V146.06Zm-5.93-2.38-16.74-6.72V102.07l5.44-2.17V128l5.93,2.37V90.74l-17.27,6.92v32.42L328,123.33V97.53l5.41-2.17v23.5l5.93,2.37V93l28.08-11.27Z" transform="translate(-50.77 -30.35)"/><text class="cls-2" transform="translate(0 222.22) scale(1.04 1)">MODERN HOMES</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="graphics" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 747 269.1" style="enable-background:new 0 0 747 269.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#9E8F70;}
+	.st1{fill:#6F7070;}
+	.st2{font-family:'Poppins-ExtraBold';}
+	.st3{font-size:70.7922px;}
+	.st4{letter-spacing:-1.9;}
+</style>
+<path class="st0" d="M373.3,141.5v-69L362,77.1V47.4l-28.6-17v51.5l5.9-2.4V41.7l16.8,10.1v27.7l-5.4,2.2v-26l-5.9-3.7V84l-22.7,9.1
+	V121l-11.3-4.5v64.3h39.9v-34.6l-5.9-2.4v30.2h-28.1v-48.2l16.7,6.7v27.9H328V137l-5.9-2.4V167h17.3v-32.3l39.4,15.8v23.3H362v-16.4
+	l5.4,2.2v7.4h5.9v-11.9l-17.2-6.9v32.4h28.6v-34.6L373.3,141.5z M367.4,139.1l-16.7-6.7v-30.4l5.4-2.2v28l5.9,2.4V90.7l-17.3,6.9
+	v32.4l-16.8-6.7V97.5l5.4-2.2v23.5l5.9,2.4V93l28.1-11.3L367.4,139.1z"/>
+<text transform="matrix(1.0395 0 0 1 50.771 252.5674)" class="st1 st2 st3 st4">MODERN HOMES</text>
+</svg>

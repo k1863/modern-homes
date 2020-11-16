@@ -83,3 +83,17 @@
     margin-top: 1.5rem;
   }
 }
+
+@mixin input-search {
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  font-size: $default-font-size;
+  border: none;
+  margin-right: 2rem;
+  color: $color-grey;
+  text-transform: capitalize;
+
+  &:focus {
+    outline: none;
+  }
+}

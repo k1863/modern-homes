@@ -1,0 +1,90 @@
+.features {
+  width: 100%;
+  height: 70vh;
+  padding: 0 10rem;
+
+  &__cards-box {
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-top: 5rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1.4rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &:hover {
+      box-shadow: 0 1rem 3rem rgba($color-primary-dark, 0.1);
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  &__icon-box {
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    margin: 3rem;
+    background-color: $color-grey-light;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: $color-primary-dark;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 3rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: $color-grey-light;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  &__card .paragraph {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+.right__icon {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  fill: $color-primary;
+  transition: opacity 0.2s ease-in;
+}
+
+.features__card:hover .features__btn {
+  opacity: 1;
+}
+
+.features__card:hover .features__heading {
+  color: $color-primary;
+}

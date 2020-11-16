@@ -1,4 +1,5 @@
 import React from "react";
+import sprite from "../../svg-icons/sprites.svg";
 import "../../sass/style.scss";
 
 const Header = () => {
@@ -12,41 +13,64 @@ const Header = () => {
           Explore opportunities to live and work better in a new home.
         </p>
       </div>
-      <div className="form__radios margin-top--big">
-        <ul className="form__radio-group">
-          <li className="form__radio-item">
+      <div className="form__header">
+        <div className="form__radios margin-top--big">
+          <div className="form__radio-group">
             <input
               type="radio"
-              id="buy_property"
-              name="buy_property"
-              value="buy_property"
               className="form__radio-input"
-              checked="checked"
+              id="small"
+              name="group-size"
             />
-            <label for="buy_property" className="form__radio-label">
+            <label htmlFor="small" className="form__radio-label">
+              <span className="form__radio-button"></span>
               Buy
             </label>
-            <div class="check"></div>
-          </li>
-          <li className="form__radio-item">
+          </div>
+          <div className="form__radio-group">
             <input
               type="radio"
-              id="sell_property"
-              name="sell_property"
-              value="sell_property"
               className="form__radio-input"
+              id="large"
+              name="group-size"
             />
-            <label for="sell_property" className="form__radio-label">
+            <label htmlFor="large" className="form__radio-label">
+              <span className="form__radio-button"></span>
               Sell
             </label>
-            <div class="check">
-              <div class="inside"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </div>
 
-      <div className="form__search-group"></div>
+        <div className="form__search-group">
+          <input
+            className="form__search--location"
+            type="search"
+            id="search-location"
+            name="location"
+            placeholder="Search location"
+          />
+          <select id="house-types" name="cars" className="form__select--type">
+            <option value="residential">residential</option>
+            <option value="commercial">commercial</option>
+            <option value="industrial">industrial</option>
+          </select>
+          <select
+            id="currency-types"
+            name="currency"
+            className="form__select--type"
+          >
+            <option value="usd">USD</option>
+            <option value="euro">EURO</option>
+            <option value="gbp">GBP</option>
+          </select>
+          <button className="search_btn" type="submit">
+            <svg className="search-icon">
+              <use href={sprite + "#icon-shopping-cart"}></use>
+            </svg>
+            search
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
