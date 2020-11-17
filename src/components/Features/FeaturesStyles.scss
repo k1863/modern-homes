@@ -1,13 +1,10 @@
 .features {
   width: 100%;
-  height: 70vh;
-  padding: 0 10rem;
 
   &__cards-box {
     display: flex;
     justify-content: center;
-    margin-left: 3rem;
-    margin-top: 5rem;
+    background-color: $color-grey-light;
   }
 
   &__card {
@@ -17,14 +14,9 @@
     padding: 3rem;
     border-radius: 1.4rem;
     transition: all 0.2s ease-in;
-    cursor: pointer;
 
     &:not(:last-child) {
       margin-right: 3rem;
-    }
-
-    &:hover {
-      box-shadow: 0 1rem 3rem rgba($color-primary-dark, 0.1);
     }
   }
 
@@ -37,34 +29,30 @@
     width: 6rem;
     height: 6rem;
     display: block;
-    margin: 3rem;
-    background-color: $color-grey-light;
-    padding: 1rem;
-    border-radius: 50%;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  &__icon {
+  &__icon-header {
     display: block;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 5rem;
     fill: $color-primary-dark;
   }
 
   &__btn {
     display: block;
-    margin-top: 3rem;
-    width: 6rem;
-    height: 6rem;
-    background-color: $color-grey-light;
+    margin: 3rem 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-primary;
     padding: 1rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    opacity: 0;
   }
 
   &__card .paragraph {
@@ -77,14 +65,6 @@
   display: block;
   height: 3rem;
   width: 3rem;
-  fill: $color-primary;
+  fill: $color-white;
   transition: opacity 0.2s ease-in;
-}
-
-.features__card:hover .features__btn {
-  opacity: 1;
-}
-
-.features__card:hover .features__heading {
-  color: $color-primary;
 }

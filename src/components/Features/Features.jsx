@@ -5,11 +5,10 @@ import "../../sass/style.scss";
 const Features = () => {
   return (
     <div className="features">
-      <h2 className="heading-secondary features__heading">How we can help</h2>
       <div className="features__cards-box">
         <div className="features__card">
           <span className="features__icon-box">
-            <svg className="features__icon">
+            <svg className="features__icon-header">
               <use href={sprite + "#icon-home2"}></use>
             </svg>
           </span>
@@ -26,7 +25,7 @@ const Features = () => {
 
         <div className="features__card">
           <span className="features__icon-box">
-            <svg className="features__icon">
+            <svg className="features__icon-header">
               <use href={sprite + "#icon-office"}></use>
             </svg>
           </span>
@@ -43,7 +42,7 @@ const Features = () => {
 
         <div className="features__card">
           <span className="features__icon-box">
-            <svg className="features__icon">
+            <svg className="features__icon-header">
               <use href={sprite + "#icon-bed"}></use>
             </svg>
           </span>
