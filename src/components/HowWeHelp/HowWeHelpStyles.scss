@@ -1,0 +1,44 @@
+.how-we-help {
+  width: 65%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 10rem;
+  color: $color-primary-dark;
+
+  &__img-box {
+    width: 48%;
+    margin-right: 4%;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  &__text-box {
+    width: 48%;
+    align-self: center;
+  }
+  &__text {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  &__text-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.number-box {
+  font-weight: 700;
+  background-color: $color-grey-light;
+  height: 4rem;
+  font-size: $default-font-size;
+  padding: 1rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}

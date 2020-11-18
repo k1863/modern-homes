@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
 import Features from "../../components/Features/Features";
 import FeaturedHomes from "../../components/FeaturedHomes/FeaturedHomes";
+import HowWeHelp from "../../components/HowWeHelp/HowWeHelp";
 
 import "../../sass/style.scss";
 
@@ -13,6 +14,7 @@ const Home = () => {
       <Header />
       <Features />
       <FeaturedHomes />
+      <HowWeHelp />
     </div>
   );
 };

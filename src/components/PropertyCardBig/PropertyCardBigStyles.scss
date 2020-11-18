@@ -1,0 +1,46 @@
+.property-card {
+  position: relative;
+  height: 35rem;
+  background-size: cover;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &:not(:last-child) {
+    margin-right: 5rem;
+  }
+
+  & > h3 {
+    color: $color-white;
+    margin-bottom: 2rem;
+  }
+
+  &__details {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__price {
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-right: 2rem;
+  }
+  &__icon {
+    @include icon;
+    fill: $color-primary;
+    margin-right: 0.7rem;
+  }
+
+  &__item {
+    color: $color-white;
+    font-size: $default-font-size;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 2rem;
+  }
+}

@@ -1,6 +1,10 @@
 import React from "react";
 import sprite from "../../svg-icons/sprite.svg";
+import HomeCard from "../HomeCard/HomeCard";
+import PropertyCardBig from "../PropertyCardBig/PropertyCardBig";
+
 import "../../sass/style.scss";
+//"https://source.unsplash.com/2gDwlIim3Uw/900x700";
 
 const FeaturedHomes = () => {
   return (
@@ -17,139 +21,51 @@ const FeaturedHomes = () => {
         </span>
       </div>
       <div className="featured-homes__cards-box">
-        <div className="featured-homes__card">
-          <div className="featured-homes__card--image-box">
-            <img
-              src=" https://source.unsplash.com/koH7IVuwRLw/800x600"
-              alt="home1"
-              className="featured-homes__card-image"
-            />
-          </div>
-          <h3 className="heading-tertiary">5412 Talbot St. Bridge, NJ 0587</h3>
-          <span className="featured-homes__price">$245/mo</span>
-          <div className="featured-homes__details">
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-bed"}></use>
-              </svg>
-              05 bed
-            </span>
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-bath"}></use>
-              </svg>
-              04 bath
-            </span>
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-crop_free"}></use>
-              </svg>
-              1256 sq
-            </span>
-          </div>
-          <div className="featured-homes__contacts">
-            <span className="btn-details">View details</span>
-            <span className="featured-homes__icon-detail">
-              <svg className="features__icon-detail">
-                <use href={sprite + "#icon-mail"}></use>
-              </svg>
-            </span>
-            <span className="featured-homes__icon-detail">
-              <svg className="features__icon-detail">
-                <use href={sprite + "#icon-phone"}></use>
-              </svg>
-            </span>
-          </div>
+        <div className="property-card--box">
+          <PropertyCardBig
+            className="property-card--big"
+            address="4 West Rockledge Drive
+            Flushing, NY 11354"
+            baths=" 03"
+            price="$2540/mo"
+            bedrooms="04"
+            imgUrl="https://source.unsplash.com/2gDwlIim3Uw/900x700"
+          />
+          <PropertyCardBig
+            className="property-card--big"
+            address="4 West Rockledge Drive
+            Flushing, NY 11354"
+            baths=" 03"
+            price="$2540/mo"
+            bedrooms="04"
+            imgUrl="https://source.unsplash.com//_TPTXZd9mOo/900x600"
+          />
         </div>
-
-        <div className="featured-homes__card">
-          <div className="featured-homes__card--image-box">
-            <img
-              src="https://source.unsplash.com/L7EwHkq1B2s/800x600"
-              alt="home1"
-              className="featured-homes__card-image"
-            />
-          </div>
-          <h3 className="heading-tertiary">5412 Talbot St. Bridge, NJ 0587</h3>
-          <span className="featured-homes__price">$245/mo</span>
-          <div className="featured-homes__details">
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-bed"}></use>
-              </svg>
-              05 bed
-            </span>
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-bath"}></use>
-              </svg>
-              04 bath
-            </span>
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-crop_free"}></use>
-              </svg>
-              1256 sq
-            </span>
-          </div>
-          <div className="featured-homes__contacts">
-            <span className="btn-details">View details</span>
-            <span className="featured-homes__icon-detail">
-              <svg className="features__icon-detail">
-                <use href={sprite + "#icon-mail"}></use>
-              </svg>
-            </span>
-            <span className="featured-homes__icon-detail">
-              <svg className="features__icon-detail">
-                <use href={sprite + "#icon-phone"}></use>
-              </svg>
-            </span>
-          </div>
-        </div>
-
-        <div className="featured-homes__card">
-          <div className="featured-homes__card--image-box">
-            <img
-              src="https://source.unsplash.com/MP0bgaS_d1c/800x600"
-              alt="home1"
-              className="featured-homes__card-image"
-            />
-          </div>
-          <h3 className="heading-tertiary">5412 Talbot St. Bridge, NJ 0587</h3>
-          <span className="featured-homes__price">$245/mo</span>
-          <div className="featured-homes__details">
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-bed"}></use>
-              </svg>
-              05 bed
-            </span>
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-bath"}></use>
-              </svg>
-              04 bath
-            </span>
-            <span className="featured-homes__item">
-              <svg className="features__icon">
-                <use href={sprite + "#icon-crop_free"}></use>
-              </svg>
-              1256 sq
-            </span>
-          </div>
-          <div className="featured-homes__contacts">
-            <span className="btn-details">View details</span>
-            <span className="featured-homes__icon-detail">
-              <svg className="features__icon-detail">
-                <use href={sprite + "#icon-mail"}></use>
-              </svg>
-            </span>
-            <span className="featured-homes__icon-detail">
-              <svg className="features__icon-detail">
-                <use href={sprite + "#icon-phone"}></use>
-              </svg>
-            </span>
-          </div>
+        <div className="home-card__box">
+          <HomeCard
+            imgUrl="https://source.unsplash.com/koH7IVuwRLw/800x600"
+            propertyName="5412 Talbot St. Bridge, NJ 0587"
+            price="$2245/mo"
+            bedrooms="05 bed"
+            bathrooms="04 bath"
+            size="1256 sq"
+          />
+          <HomeCard
+            imgUrl="https://source.unsplash.com/L7EwHkq1B2s/800x600"
+            propertyName="4352 City Way Manhattan, NY 0587"
+            price="$3245/mo"
+            bedrooms="03 bed"
+            bathrooms="02 bath"
+            size="2247 sq"
+          />
+          <HomeCard
+            imgUrl="https://source.unsplash.com/MP0bgaS_d1c/800x600"
+            propertyName="1312 Brooklyn avenue Los Angeles, CA 0587"
+            price="$3550/mo"
+            bedrooms="05 bed"
+            bathrooms="04 bath"
+            size="2256 sq"
+          />
         </div>
       </div>
     </div>
