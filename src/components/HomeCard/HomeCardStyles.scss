@@ -14,13 +14,17 @@
     }
   }
 
-  &__price {
+  &__price-box {
     padding: 0 2rem;
     font-size: 1.8rem;
     font-weight: 400;
     color: $color-primary-dark;
   }
 
+  &__price {
+    color: $color-primary;
+    font-weight: 700;
+  }
   &__card--image-box {
     width: 100%;
   }

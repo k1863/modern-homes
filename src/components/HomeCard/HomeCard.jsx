@@ -17,7 +17,9 @@ const HomeCard = ({
         <img src={imgUrl} alt="home1" className="featured-homes__card-image" />
       </div>
       <h3 className="heading-tertiary">{propertyName}</h3>
-      <span className="featured-homes__price">{price}</span>
+      <span className="featured-homes__price-box">
+        <span className="featured-homes__price">{price}</span>/month
+      </span>
       <div className="featured-homes__details">
         <span className="featured-homes__item">
           <svg className="features__icon">

@@ -3,6 +3,7 @@
 @import "variables";
 @import "base";
 @import "typography";
+@import "components";
 
 @import "../components/Navigation/NavigationStyles.scss";
 @import "../pages/Home/Home.Styles.scss";
@@ -12,3 +13,6 @@
 @import "../components/HomeCard/HomeCardStyles.scss";
 @import "../components/PropertyCardBig/PropertyCardBigStyles.scss";
 @import "../components/HowWeHelp//HowWeHelpStyles.scss";
+@import "../components/AboutUs/AboutUsStyles.scss";
+@import "../components/PropertiesCard/PropertiesCardStyles.scss";
+@import "../components/PropertiesSearch/PropertiesSearchBoxStyles.scss";

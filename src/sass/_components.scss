@@ -1,0 +1,15 @@
+.btn {
+  color: $color-primary;
+  background-color: $color-primary-light;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary-light;
+    color: $color-primary-dark;
+  }
+}

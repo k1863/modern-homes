@@ -4,8 +4,11 @@ import Navigation from "../../components/Navigation/Navigation";
 import Features from "../../components/Features/Features";
 import FeaturedHomes from "../../components/FeaturedHomes/FeaturedHomes";
 import HowWeHelp from "../../components/HowWeHelp/HowWeHelp";
+import AboutUs from "../../components/AboutUs/AboutUs";
+import PropertiesSearchBox from "../../components/PropertiesSearch/PropertiesSearchBox";
 
 import "../../sass/style.scss";
+
 
 const Home = () => {
   return (
@@ -15,6 +18,8 @@ const Home = () => {
       <Features />
       <FeaturedHomes />
       <HowWeHelp />
+      <AboutUs />
+      <PropertiesSearchBox />
     </div>
   );
 };

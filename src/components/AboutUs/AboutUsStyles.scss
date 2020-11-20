@@ -1,0 +1,25 @@
+.about-us {
+  width: 65%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+
+  color: $color-primary-dark;
+
+  &__img-box {
+    width: 48%;
+    margin-left: 5rem;
+    align-self: center;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  &__text-box {
+    width: 48%;
+    align-self: center;
+  }
+}
