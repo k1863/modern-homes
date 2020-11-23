@@ -18,7 +18,7 @@ const AboutUs = () => {
       </div>
       <div className="about-us__img-box">
         <img
-          src="https://source.unsplash.com/JvQ0Q5IkeMM/600x820"
+          src="https://source.unsplash.com/vGgn0xLdy8s/600x820"
           alt="img_help"
           className="about-us__img"
         />

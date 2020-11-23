@@ -6,8 +6,11 @@ import FeaturedHomes from "../../components/FeaturedHomes/FeaturedHomes";
 import HowWeHelp from "../../components/HowWeHelp/HowWeHelp";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import PropertiesSearchBox from "../../components/PropertiesSearch/PropertiesSearchBox";
+import WeeklyFeatureVideo from "../../components/WeeklyFeatureVideo/WeeklyFeatureVideo";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 import "../../sass/style.scss";
+import CallToAction from "../../components/CallToAction/CallToAction";
 
 
 const Home = () => {
@@ -20,6 +23,9 @@ const Home = () => {
       <HowWeHelp />
       <AboutUs />
       <PropertiesSearchBox />
+      <WeeklyFeatureVideo />
+      <Testimonials />
+      <CallToAction />
     </div>
   );
 };

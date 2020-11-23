@@ -26,6 +26,7 @@ const FeaturedHomes = () => {
             address="4 West Rockledge Drive
             Flushing, NY 11354"
             baths=" 03"
+            size="2350sq"
             price="$2540/mo"
             bedrooms="04"
             imgUrl="https://source.unsplash.com/2gDwlIim3Uw/900x700"
@@ -37,6 +38,7 @@ const FeaturedHomes = () => {
             baths=" 03"
             price="$2540/mo"
             bedrooms="04"
+            size="2450sq"
             imgUrl="https://source.unsplash.com//_TPTXZd9mOo/900x600"
           />
         </div>

@@ -1,0 +1,64 @@
+.call-to-action {
+  width: 80%;
+  display: flex;
+  position: relative;
+  margin: 10rem auto;
+  background-color: $color-grey-light;
+  padding: 8rem 0;
+  border-radius: 1.5rem;
+  top: 15rem;
+
+  &__img-box {
+    width: 50%;
+    position: relative;
+  }
+
+  &__img {
+    width: 96%;
+    position: absolute;
+    left: 0;
+    top: -22.6rem;
+    border-bottom-left-radius: 1.5rem;
+  }
+
+  &__text-box {
+    background-color: $color-grey-light;
+    position: relative;
+
+    h2 {
+      span {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__email {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 6px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    right: 0.4rem;
+    padding: 1rem;
+    background-color: $color-primary;
+    border-radius: 6px;
+    bottom: 0px;
+    font-size: $default-font-size;
+    font-weight: 500;
+    color: $color-white;
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+
+    &:hover {
+      background-color: $color-primary-light;
+      color: $color-primary-dark;
+    }
+  }
+}

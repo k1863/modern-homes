@@ -103,3 +103,8 @@
   height: 2rem;
   
 }
+
+@mixin  centerHorizontal{
+  left: 50%;
+  transform: translateX(-50%);
+}
