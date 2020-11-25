@@ -6,7 +6,9 @@ import "../../sass/style.scss";
 const PropertiesSearchBox = () => {
   return (
     <div className="properties-search">
-      <h2 className="heading-secondary margin-bottom--big">Popular Searches</h2>
+      <h2 className="heading-secondary margin-bottom--big margin-top--big">
+        Popular Searches
+      </h2>
       <div className="properties-search__icon-box margin-bottom--big">
         <span className="properties-search__icon-text">
           <svg className="properties-search__icon">

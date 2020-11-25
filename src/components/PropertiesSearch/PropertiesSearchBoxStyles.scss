@@ -14,7 +14,7 @@
   &__icon {
     width: 6rem;
     height: 6rem;
-    fill: $color-grey;
+    fill: $color-beige;
     margin-right: 1.5rem;
     cursor: pointer;
 
@@ -28,7 +28,7 @@
     align-items: center;
     font-size: $default-font-size;
     flex: 0 0 20%;
-    color: $color-grey;
+    color: $color-beige;
     font-weight: 500;
     position: relative;
 
@@ -54,7 +54,6 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     overflow-x: hidden;
-    margin-top: -5rem;
     overflow-x: hidden;
   }
 }

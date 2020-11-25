@@ -1,5 +1,6 @@
 .call-to-action {
   width: 80%;
+  height: 50vh;
   display: flex;
   position: relative;
   margin: 10rem auto;
@@ -17,7 +18,7 @@
     width: 96%;
     position: absolute;
     left: 0;
-    top: -22.6rem;
+    top: -24rem;
     border-bottom-left-radius: 1.5rem;
   }
 
@@ -37,6 +38,8 @@
     padding: 1.2rem;
     border-radius: 6px;
     border: none;
+    position: relative;
+    z-index: 1;
 
     &:focus {
       outline: none;
@@ -45,15 +48,17 @@
 
   &__label {
     position: absolute;
-    right: 0.4rem;
     padding: 1rem;
     background-color: $color-primary;
     border-radius: 6px;
-    bottom: 0px;
+    display: inline-block;
+    left: 75%;
     font-size: $default-font-size;
     font-weight: 500;
+    z-index: 10;
     color: $color-white;
     cursor: pointer;
+    position: absolute;
     transition: 0.2s all ease-in;
 
     &:hover {

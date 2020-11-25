@@ -1,8 +1,8 @@
 .testimonials {
   width: 65%;
   margin: 15rem auto;
-  position: relative;
   height: 100vh;
+  position: relative;
 
   &::before {
     content: "\201C";
@@ -85,7 +85,7 @@
 .indicators {
   display: flex;
   justify-content: space-between;
-  margin-top: 50%;
+  margin-top: 52%;
   left: 50%;
   margin-left: 10rem;
   position: absolute;

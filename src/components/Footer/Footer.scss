@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30rem;
+  margin-bottom: 15rem;
+
+  &__logo-box {
+    width: 15rem;
+    margin-left: 0;
+  }
+
+  &__list {
+    font-size: $default-font-size;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 1.5rem 0;
+    color: $color-primary-grey;
+  }
+
+  &__address {
+    font-size: $default-font-size;
+    color: $color-primary-grey;
+  }
+}

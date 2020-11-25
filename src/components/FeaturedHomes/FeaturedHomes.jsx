@@ -23,8 +23,7 @@ const FeaturedHomes = () => {
         <div className="property-card--box">
           <PropertyCardBig
             className="property-card--big"
-            address="4 West Rockledge Drive
-            Flushing, NY 11354"
+            address="422 Atlantic Lane Alliance, OH 44601"
             baths=" 03"
             size="2350sq"
             price="$2540/mo"
@@ -33,8 +32,7 @@ const FeaturedHomes = () => {
           />
           <PropertyCardBig
             className="property-card--big"
-            address="4 West Rockledge Drive
-            Flushing, NY 11354"
+            address="545 Front Dr.Thornton, CO 80241"
             baths=" 03"
             price="$2540/mo"
             bedrooms="04"

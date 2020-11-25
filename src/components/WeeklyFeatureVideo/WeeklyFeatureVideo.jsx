@@ -20,12 +20,7 @@ const WeeklyFeatureVideo = () => {
         <button className="btn feature-video__btn">Explore more &#8594;</button>
       </div>
       <div className="feature-video__video-box">
-        <video
-          width="600"
-          controls
-          autoPlay="true"
-          className="feature-video__video"
-        >
+        <video width="600" controls autoPlay className="feature-video__video">
           <source src={featureVideo} type="video/mp4" />
           Your browser does not support HTML video.
         </video>
