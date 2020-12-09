@@ -2,15 +2,25 @@
   width: 65%;
   position: relative;
   display: flex;
-  margin: 15rem auto;
+  margin: 10rem auto;
   justify-content: center;
 
   color: $color-primary-dark;
+
+  @include respond(tab-port) {
+    width: 80%;
+    flex-direction: column;
+  }
 
   &__img-box {
     width: 48%;
     margin-left: 5rem;
     align-self: center;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
   &__img {
     width: 100%;
@@ -20,5 +30,25 @@
   &__text-box {
     width: 48%;
     align-self: center;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    & > h2 {
+      @include respond(tab-port) {
+        br {
+          content: " ";
+        }
+      }
+    }
+  }
+}
+
+@include respond(tab-port) {
+  #about-us__small-img {
+    content: url("https://source.unsplash.com/ExOmPidaHvY/800x520");
+    margin-bottom: 2rem;
+    margin-top: 3rem;
   }
 }

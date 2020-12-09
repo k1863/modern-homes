@@ -47,22 +47,29 @@ const Header = () => {
             type="search"
             id="search-location"
             name="location"
-            placeholder="Search location"
+            placeholder="Search by street name or city"
           />
-          <select id="house-types" name="cars" className="form__select--type">
-            <option value="residential">residential</option>
-            <option value="commercial">commercial</option>
-            <option value="industrial">industrial</option>
-          </select>
-          <select
-            id="currency-types"
-            name="currency"
-            className="form__select--type"
-          >
-            <option value="usd">USD</option>
-            <option value="euro">EURO</option>
-            <option value="gbp">GBP</option>
-          </select>
+          <div className="select-opts">
+            <select
+              id="house-types"
+              name="cars"
+              className="form__select--type opt1"
+            >
+              <option value="residential">residential</option>
+              <option value="commercial">commercial</option>
+              <option value="industrial">industrial</option>
+            </select>
+            <select
+              id="currency-types"
+              name="currency"
+              className="form__select--type opt2"
+            >
+              <option value="usd">USD</option>
+              <option value="euro">EURO</option>
+              <option value="gbp">GBP</option>
+            </select>
+          </div>
+
           <button className="search_btn" type="submit">
             <svg className="search-icon">
               <use href={sprite + "#icon-shopping-cart"}></use>

@@ -22,7 +22,7 @@ const FeaturedHomes = () => {
       <div className="featured-homes__cards-box">
         <div className="property-card--box">
           <PropertyCardBig
-            className="property-card--big"
+            className="property-card--big card-1"
             address="422 Atlantic Lane Alliance, OH 44601"
             baths=" 03"
             size="2350sq"
@@ -31,7 +31,25 @@ const FeaturedHomes = () => {
             imgUrl="https://source.unsplash.com/2gDwlIim3Uw/900x700"
           />
           <PropertyCardBig
-            className="property-card--big"
+            className="property-card--big card-2"
+            address="545 Front Dr.Thornton, CO 80241"
+            baths=" 03"
+            price="$2540/mo"
+            bedrooms="04"
+            size="2450sq"
+            imgUrl="https://source.unsplash.com//_TPTXZd9mOo/900x600"
+          />
+          <PropertyCardBig
+            className="property-card--big card-3"
+            address="422 Atlantic Lane Alliance, OH 44601"
+            baths=" 03"
+            size="2350sq"
+            price="$2540/mo"
+            bedrooms="04"
+            imgUrl="https://source.unsplash.com/2gDwlIim3Uw/900x700"
+          />
+          <PropertyCardBig
+            className="property-card--big card-4"
             address="545 Front Dr.Thornton, CO 80241"
             baths=" 03"
             price="$2540/mo"
@@ -42,14 +60,14 @@ const FeaturedHomes = () => {
         </div>
         <div className="home-card__box">
           <HomeCard
-            imgUrl="https://source.unsplash.com/koH7IVuwRLw/800x600"
+            imgUrl="https://source.unsplash.com/6sDuV840wxs/600x1000"
             propertyName="5412 Talbot St. Bridge, NJ 0587"
             price="$2245"
             bedrooms="05 bed"
             bathrooms="04 bath"
             size="1256 sq"
           />
-          <HomeCard
+          {/*  <HomeCard
             imgUrl="https://source.unsplash.com/L7EwHkq1B2s/800x600"
             propertyName="4352 City Way Manhattan, NY 0587"
             price="$3245"
@@ -64,7 +82,7 @@ const FeaturedHomes = () => {
             bedrooms="05 bed"
             bathrooms="04 bath"
             size="2256 sq"
-          />
+         /> */}
         </div>
       </div>
     </div>

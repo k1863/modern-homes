@@ -19,12 +19,6 @@ const PropertiesSearchBox = () => {
 
         <span className="properties-search__icon-text">
           <svg className="properties-search__icon">
-            <use href={sprite + "#bed"}></use>
-          </svg>
-          Search by quantity of rooms
-        </span>
-        <span className="properties-search__icon-text">
-          <svg className="properties-search__icon">
             <use href={sprite + "#loan"}></use>
           </svg>
           Property for sale

@@ -1,15 +1,20 @@
 .how-we-help {
   width: 65%;
   position: relative;
-  display: flex;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10rem auto;
   justify-content: center;
-  margin-top: 15rem;
   color: $color-primary-dark;
+  column-gap: 5rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
 
   &__img-box {
-    width: 48%;
-    margin-right: 5rem;
+    width: 100%;
     align-self: center;
   }
   &__img {
@@ -18,8 +23,16 @@
   }
 
   &__text-box {
-    width: 48%;
+    width: 100;
     align-self: center;
+
+    & h2 {
+      position: relative;
+      @include respond(tab-land) {
+        position: absolute;
+        top: 0;
+      }
+    }
   }
   &__text {
     display: flex;
@@ -41,4 +54,12 @@
   width: 4rem;
   border-radius: 50%;
   margin-right: 2rem;
+}
+
+@include respond(tab-land) {
+  #hwh-small--img {
+    content: url("https://source.unsplash.com/ExOmPidaHvY/800x520");
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+  }
 }

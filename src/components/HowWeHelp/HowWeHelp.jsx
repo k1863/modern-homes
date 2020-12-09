@@ -10,6 +10,7 @@ const HowWeHelp = () => {
           src="https://source.unsplash.com/JvQ0Q5IkeMM/600x820"
           alt="img_help"
           className="how-we-help__img"
+          id="hwh-small--img"
         />
       </div>
       <div className="how-we-help__text-box">

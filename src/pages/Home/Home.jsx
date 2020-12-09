@@ -11,11 +11,13 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import "../../sass/style.scss";
 import CallToAction from "../../components/CallToAction/CallToAction";
 import Footer from "../../components/Footer/Footer";
+import SidebarMenu from "../../components/SidebarMenu/SidebarMenu";
 
 const Home = () => {
   return (
     <div className="home">
       <Navigation />
+      <SidebarMenu />
       <Header />
       <FeaturedHomes />
       <HowWeHelp />

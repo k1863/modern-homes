@@ -31,6 +31,13 @@
     color: $color-beige;
     font-weight: 500;
     position: relative;
+    margin-right: 3rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
 
     &::after {
       content: "";
@@ -39,6 +46,10 @@
       display: block;
       position: absolute;
       width: 100%;
+
+      @include respond(tab-port) {
+        padding: 6rem 0;
+      }
     }
   }
 
@@ -70,8 +81,9 @@
 }
 
 .properties-search-box {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
 
   & ~ span:first-child {
     color: $color-primary;

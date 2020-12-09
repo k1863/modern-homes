@@ -7,16 +7,28 @@
   display: flex;
   align-items: center;
 
+  @include respond(tab-port) {
+    padding: 0 2rem;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 40;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include respond(tab-mini) {
+      display: none;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
-        display: flex;
+    display: flex;
     flex-direction: column;
     color: $color-primary-dark;
     font-size: 1.4rem;

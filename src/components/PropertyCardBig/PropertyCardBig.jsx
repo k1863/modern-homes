@@ -11,7 +11,7 @@ const PropertyCardBig = ({ imgUrl, price, baths, bedrooms, size, address }) => {
       }}
     >
       <div className="property-card__text-box">
-        <h3 className="heading-tertiary">{address}</h3>
+        <h3 className="">{address}</h3>
         <div className="property-card__details">
           <span className="property-card__price">{price}</span>
           <span className="property-card__item">

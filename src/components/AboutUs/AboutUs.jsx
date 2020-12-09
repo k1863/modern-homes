@@ -24,6 +24,7 @@ const AboutUs = () => {
         <img
           src="https://source.unsplash.com/vGgn0xLdy8s/600x820"
           alt="img_help"
+          id="about-us__small-img"
           className="about-us__img"
         />
       </div>
