@@ -21,6 +21,11 @@
     &:hover {
       fill: $color-primary;
     }
+
+    @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__icon-text {
@@ -66,6 +71,10 @@
     border-bottom-right-radius: 0;
     overflow-x: hidden;
     overflow-x: hidden;
+
+    @include respond(tab-1024) {
+      height: 80%;
+    }
   }
 }
 

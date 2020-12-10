@@ -1,15 +1,22 @@
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 14rem));
+  gap: 3rem;
   width: 80%;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 
   &__logo-box {
     width: 15rem;
     margin-left: 0;
+
+    @include respond(tab-1024) {
+      grid-column: 1 / -1;
+      justify-self: center;
+      width: 20rem;
+    }
   }
 
   &__list {

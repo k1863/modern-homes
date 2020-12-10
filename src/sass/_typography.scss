@@ -30,10 +30,18 @@
 
 .margin-top--big {
   margin-top: 5rem;
+
+  @include respond(tab-port) {
+    margin-top: 3.5rem;
+  }
 }
 
 .margin-top--medium {
   margin-top: 3.5rem;
+
+  @include respond(tab-port) {
+    margin-top: 2.5rem;
+  }
 }
 
 .margin-top--small {
@@ -43,14 +51,14 @@
 .margin-bottom--big {
   margin-bottom: 5rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     margin-bottom: 3.5rem;
   }
 }
 .margin-bottom--medium {
   margin-bottom: 3.5rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     margin-bottom: 2.5rem;
   }
 }

@@ -14,7 +14,7 @@ const CallToAction = () => {
       </div>
       <div className="call-to-action__text-box">
         <h2 className="heading-secondary margin-bottom--medium">
-          <span>Get listed</span> <br></br> your home as an owner
+          <span>Get</span> your <span>home</span> listed as an owner
         </h2>
         <p className="paragraph margin-bottom--medium">
           Put your email address and get listed
@@ -24,6 +24,7 @@ const CallToAction = () => {
           name="email"
           id="email"
           className="call-to-action__email"
+          placeholder="your email"
         />
         <label htmlFor="email" className="call-to-action__label">
           Get Listed

@@ -76,6 +76,7 @@ const Testimonials = ({ clientName, clientTitle, imgUrl }) => {
               src={images[0]}
               alt="client"
               className="testimonials__client--img"
+              id="client-img1"
             />
             <TestimonialsCard
               clientName="Eric Limpopo"
@@ -88,6 +89,7 @@ const Testimonials = ({ clientName, clientTitle, imgUrl }) => {
               src={images[1]}
               alt="client"
               className="testimonials__client--img"
+              id="client-img2"
             />
             <TestimonialsCard
               clientName="Brad Gibson"
@@ -100,6 +102,7 @@ const Testimonials = ({ clientName, clientTitle, imgUrl }) => {
               src={images[2]}
               alt="client"
               className="testimonials__client--img"
+              id="client-img3"
             />
             <TestimonialsCard
               clientName="Jean Marie"

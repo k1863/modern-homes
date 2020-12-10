@@ -4,35 +4,57 @@
   flex-direction: column;
   align-items: center;
   margin: 10rem auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 90%;
+    height: 60%;
+    background-color: #f3f3f5;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    border-radius: 1rem;
+    bottom: -3rem;
+    /*  width: 180%;
+      height: 205%;
+      background-color: $color-grey-light;
+      z-index: -1;
+      position: absolute;
+      left: -5rem;
+      border-radius: 1.5rem; */
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
 
   &__head {
     display: flex;
     justify-content: space-between;
     width: 65%;
     margin-top: 5rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      width: 80%;
+    }
   }
 
   &__btn {
     align-self: center;
+
+    @include respond(tab-port) {
+      align-self: flex-start;
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__video-box {
     width: 65%;
 
-    &::before {
-      content: "";
-      width: 90%;
-      height: 65%;
-      background-color: $color-grey-light;
-      z-index: -1;
-      position: absolute;
-      right: 0;
-      border-radius: 1rem;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      overflow-x: hidden;
-      margin-top: 17%;
-      overflow-x: hidden;
+    @include respond(tab-port) {
+      width: 80%;
     }
   }
   &__video {
@@ -46,6 +68,12 @@
     display: flex;
     margin-top: 3.5rem;
     justify-content: space-around;
+    position: relative;
+
+    @include respond(tab-port) {
+      width: 80%;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -68,13 +96,37 @@
     stroke: currentColor;
     display: inline-block;
     margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-bottom: 0;
+    }
+
+    @include respond(phone) {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 
   & sup {
     position: absolute;
     right: -1rem;
-    top: 6rem;
+    top: 6.8rem;
     font-size: 1.2rem;
+
+    @include respond(tab-port) {
+      top: 7rem;
+      right: 0;
+    }
+    @include respond(phone) {
+      top: 5.4rem;
+      right: 0;
+    }
+
+    & span {
+      top: 1rem;
+    }
   }
 
   &__sub-head {

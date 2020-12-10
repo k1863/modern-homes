@@ -42,7 +42,10 @@ const WeeklyFeatureVideo = () => {
           <svg className="feature-video__icon">
             <use href={sprite + "#icon-pool"}></use>
           </svg>
-          Pool<sup>40 M2</sup>
+          Pool
+          <sup>
+            40 <span>M</span>2
+          </sup>
         </span>
         <span className="feature-video__item">
           <svg className="feature-video__icon">

@@ -1,8 +1,12 @@
 .testimonials {
   width: 65%;
-  margin: 15rem auto;
-  height: 100vh;
+  margin: 10rem auto;
+  height: 90vh;
   position: relative;
+
+  @include respond(tab-1024) {
+    width: 80%;
+  }
 
   &::before {
     content: "\201C";
@@ -34,6 +38,10 @@
     width: 100%;
     display: flex;
     position: absolute;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__client--img {
@@ -41,6 +49,11 @@
     border-radius: 2rem;
     position: relative;
     z-index: 3;
+
+    @include respond(phone) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
   &__client-avatar {
     height: 8rem;
@@ -53,6 +66,14 @@
     left: 5rem;
     display: flex;
     justify-content: flex-start;
+
+    @include respond(tab-port) {
+      margin-top: 0;
+      top: 42rem;
+    }
+    @include respond(phone) {
+      top: 32rem;
+    }
   }
 
   &__west-btn {
@@ -61,6 +82,15 @@
     left: 0rem;
     display: flex;
     justify-content: flex-start;
+
+    @include respond(tab-port) {
+      margin-top: 0;
+      top: 42rem;
+    }
+
+    @include respond(phone) {
+      top: 32rem;
+    }
   }
 
   &__icon {
@@ -80,6 +110,14 @@
 .testimonials__card {
   align-self: center;
   margin-left: 10rem;
+
+  @include respond(tab-port) {
+    margin-left: 5rem;
+  }
+  @include respond(phone) {
+    margin-left: 0;
+    margin-top: 7rem;
+  }
 }
 
 .indicators {
@@ -89,6 +127,11 @@
   left: 50%;
   margin-left: 10rem;
   position: absolute;
+
+  @include respond(tab-1024) {
+    margin-top: 0;
+    top: 52rem;
+  }
 }
 
 .indicator.active .testimonials__client-avatar {
@@ -99,4 +142,20 @@
   border-radius: 1rem;
   margin-right: 1.5rem;
   cursor: pointer;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+@include respond(tab-port) {
+  #client-img1 {
+    content: url(../../images/client-1s.jpg) !important;
+  }
+  #client-img2 {
+    content: url(../../images/client-2s.jpg) !important;
+  }
+  #client-img3 {
+    content: url(../../images/client-3s.jpg) !important;
+  }
 }

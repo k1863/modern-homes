@@ -5,6 +5,11 @@
   box-shadow: $box-shadow-primary;
   overflow: hidden;
 
+  @include respond(tab-1024) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   & h3 {
     padding: 0 2rem 0 2rem;
   }
