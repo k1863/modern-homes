@@ -4,8 +4,13 @@
   height: 90vh;
   position: relative;
 
+  @include respond(tab-land) {
+    height: 100vh;
+  }
+
   @include respond(tab-1024) {
     width: 80%;
+    height: 70vh;
   }
 
   &::before {
@@ -24,6 +29,12 @@
     background-color: $color-grey-light;
     border-radius: 1.5rem;
     box-shadow: $box-shadow-primary;
+
+    @include respond(phone) {
+      width: 7rem;
+      height: 7rem;
+      font-size: 14rem;
+    }
   }
 
   & h2 {
@@ -42,17 +53,26 @@
     @include respond(phone) {
       display: block;
     }
+    @include respond(tab-port) {
+      /*       display: block;
+      margin: 0 auto; */
+    }
   }
-
   &__client--img {
-    width: 50%;
+    width: 45%;
     border-radius: 2rem;
     position: relative;
     z-index: 3;
 
+    @include respond(tab-port) {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
     @include respond(phone) {
       width: 80%;
-      margin: 0 auto;
     }
   }
   &__client-avatar {
@@ -62,14 +82,14 @@
 
   &__east-btn {
     position: absolute;
-    margin-top: 65%;
+    margin-top: 58%;
     left: 5rem;
     display: flex;
     justify-content: flex-start;
 
     @include respond(tab-port) {
       margin-top: 0;
-      top: 42rem;
+      top: 43rem;
     }
     @include respond(phone) {
       top: 32rem;
@@ -78,14 +98,14 @@
 
   &__west-btn {
     position: absolute;
-    margin-top: 65%;
+    margin-top: 58%;
     left: 0rem;
     display: flex;
     justify-content: flex-start;
 
     @include respond(tab-port) {
       margin-top: 0;
-      top: 42rem;
+      top: 43rem;
     }
 
     @include respond(phone) {
@@ -96,12 +116,12 @@
   &__icon {
     width: 5rem;
     height: 5rem;
-    fill: $color-grey;
+    fill: $color-primary-dark;
     cursor: pointer;
     transition: all 0.2s ease-in;
 
     &:hover {
-      transform: scale(1.3);
+      transform: scale(1.2);
       fill: $color-primary;
     }
   }
@@ -122,15 +142,14 @@
 
 .indicators {
   display: flex;
-  justify-content: space-between;
-  margin-top: 52%;
-  left: 50%;
+  top: 85%;
+  left: 45%;
   margin-left: 10rem;
   position: absolute;
 
   @include respond(tab-1024) {
     margin-top: 0;
-    top: 52rem;
+    justify-content: center;
   }
 }
 

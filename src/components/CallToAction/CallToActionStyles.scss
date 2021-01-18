@@ -1,9 +1,9 @@
 .call-to-action {
-  width: 80%;
+  width: 65%;
   display: grid;
   position: relative;
-  margin: 10rem auto;
-  background-color: $color-grey-light;
+  margin: 12rem auto;
+  background-color: $color-primary-light;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 20rem);
   border-radius: 2rem;
@@ -29,7 +29,6 @@
   }
 
   &__text-box {
-    background-color: $color-grey-light;
     position: relative;
     grid-row: 1 / -1;
     display: flex;
@@ -77,6 +76,7 @@
 
   &__label {
     padding: 1rem 2rem;
+    margin-right: 2rem;
     background-color: $color-primary;
     border-radius: 6px;
     font-size: $default-font-size;

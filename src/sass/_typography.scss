@@ -21,7 +21,7 @@
   font-size: 1.6rem;
   font-weight: 400;
   color: $color-primary-grey;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 
   @include respond(phone) {
     font-size: 1.4rem;

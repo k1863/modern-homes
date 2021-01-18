@@ -50,19 +50,12 @@ const Testimonials = ({ clientName, clientTitle, imgUrl }) => {
   const testimonials = [
     ` Ac turpis egestas sed tempus urna. 
      Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing.
-     Suspendisse in est ante in nibh mauris cursus mattis molestie.
-     Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
-     Non tellus orci ac auctor augue mauris augue neque gravida.
-     Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros.`,
+     Suspendisse in est ante in nibh mauris cursus mattis molestie.`,
     `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-     tempor incididunt ut labore et dolore magna aliqua. A cras semper auctor
-     neque vitae tempus quam pellentesque. Eu lobortis elementum nibh tellus.
-     Dui id ornare arcu odio ut. Interdum consectetur libero id faucibus nisl.`,
+     tempor incididunt ut labore et dolore magna aliqua. `,
     `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
      tempor incididunt ut labore et dolore magna aliqua. Cras semper auctor neque
-     vitae tempus quam pellentesque nec. Elit scelerisque mauris pellentesque
-     pulvinar pellentesque habitant morbi tristique senectus. Feugiat nisl
-     pretium fusce id velit ut tortor. Maecenas ultricies mi eget mauris pharetra et.`,
+     vitae tempus quam pellentesque nec.`,
   ];
   return (
     <div className="testimonials">

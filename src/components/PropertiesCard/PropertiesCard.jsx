@@ -2,6 +2,8 @@ import React from "react";
 import sprite from "../../svg-icons/sprite.svg";
 import locationSprite from "../../svg-icons/sprite.svg";
 
+import "../../sass/style.scss";
+
 const PropertiesCard = ({
   imgUrl,
   address,

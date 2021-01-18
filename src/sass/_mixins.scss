@@ -89,8 +89,6 @@
   border-radius: 0.6rem;
   font-size: $default-font-size;
   border: none;
-  margin-right: 2rem;
-  color: $color-grey;
   text-transform: capitalize;
 
   &:focus {
@@ -99,12 +97,11 @@
 }
 
 @mixin icon {
- width: 2rem;
+  width: 2rem;
   height: 2rem;
-  
 }
 
-@mixin  centerHorizontal{
+@mixin centerHorizontal {
   left: 50%;
   transform: translateX(-50%);
 }

@@ -1,0 +1,40 @@
+.views-widget select {
+  border: 1px solid #9b8aa8;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  color: $color-primary-dark;
+  width: 20rem;
+  @include input-search;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.views-widget {
+  width: 20rem;
+  position: relative;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.views-widget::before {
+  content: "";
+  display: block;
+  border: 8px solid transparent;
+  border-top-color: #ff9c65;
+  position: absolute;
+  right: 6px;
+  top: calc(30% - 2px);
+}
+
+select option:hover {
+  background-color: #ff9c65 !important;
+  cursor: pointer;
+}

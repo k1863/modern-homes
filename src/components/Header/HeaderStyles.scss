@@ -3,10 +3,10 @@
   height: 85vh;
   background-image: linear-gradient(
       to bottom right,
-      rgba($color-primary-dark, 0.6),
-      rgba($color-primary-dark, 0.6)
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
     ),
-    url("https://source.unsplash.com/b_79nOqf95I/1800x1200");
+    url("https://source.unsplash.com/khpWE85ge38/1800x800");
   background-size: cover;
   display: grid;
   grid-template-columns: minmax(min-content, max-content);
@@ -17,7 +17,7 @@
 
   &__text-box {
     grid-row: 2 / 3;
-
+    margin-bottom: 5rem;
     & h1,
     p {
       @include respond(tab-port) {
@@ -32,20 +32,21 @@
 
 .form__radios {
   display: flex;
+  justify-content: center;
 }
 
 .form {
   &__radio-group {
-    background-color: rgba($color-grey-light, 0.8);
-    border-radius: 1rem;
+    background-color: rgba($color-primary-light, 0.7);
+    border-radius: 5px;
     list-style: none;
     display: flex;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    border-bottom: 2px rgba($color-grey, 0.8) solid;
+    border-bottom: 2px rgba($color-black, 0.4) solid;
 
     &:not(:last-child) {
-      border-right: 2px rgba($color-grey, 0.8) solid;
+      border-right: 2px rgba($color-black, 0.4) solid;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
@@ -68,17 +69,17 @@
   &__radio-label {
     font-size: 1.6rem;
     font-weight: 700;
-    color: $color-primary-dark;
+    color: $color-primary;
     display: flex;
     transition: all 0.3s;
-    padding: 1.5rem 3rem;
+    padding: 1rem 2rem;
     cursor: pointer;
   }
 
   &__radio-button {
     display: flex;
     position: relative;
-    border: 4px solid $color-primary-dark;
+    border: 4px solid $color-primary;
     border-radius: 50%;
     height: 2rem;
     width: 2rem;
@@ -112,13 +113,13 @@
 
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
-    background-color: $color-beige;
+    background-color: $color-primary-dark;
   }
   &__radio-input:checked ~ &__radio-label {
-    color: $color-beige;
+    color: $color-primary-dark;
   }
   &__radio-input:checked ~ &__radio-label &__radio-button {
-    border: 4px solid $color-beige;
+    border: 4px solid $color-primary-dark;
   }
 }
 
@@ -135,28 +136,37 @@
 .form {
   &__search-group {
     display: flex;
-    padding: 3rem;
-    border-radius: 1rem;
-    background-color: rgba($color-grey-light, 0.8);
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: rgba($color-primary-light, 0.7);
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       flex-direction: column;
-      width: 90%;
+      min-width: 35rem;
     }
   }
 
   &__search--location {
-    width: 30rem;
+    width: 45rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     @include input-search;
     box-shadow: $box-shadow-primary;
+    font-family: "Poppins", sans-serif;
+    color: $color-primary-dark;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 100%;
+      margin: 1rem 0;
     }
   }
 
   &__select--type {
     width: 20rem;
+    margin-right: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: $color-primary-dark;
+    font-weight: 400;
     @include input-search;
 
     @include respond(tab-port) {
@@ -167,17 +177,19 @@
 }
 
 .search_btn {
-  width: 10rem;
+  width: 12rem;
+  justify-content: center;
+  align-items: center;
   @include input-search;
   display: flex;
-  background-color: $color-primary;
-  color: $color-primary-dark;
-  font-weight: 700;
+  background-color: $color-primary-dark;
+  color: $color-primary-light;
+  font-weight: 500;
+  padding: 0;
   cursor: pointer;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     width: 100%;
-    display: block;
   }
   &:hover {
     background-color: rgba($color-primary, 0.9);
@@ -186,12 +198,14 @@
 
 .search-icon {
   width: 3rem;
-  height: 2rem;
+  height: 3rem;
+  fill: $color-primary-light;
+  padding-right: 5px;
 }
 
 .select-opts {
+  display: flex;
   @include respond(tab-port) {
-    display: flex;
     justify-content: space-between;
   }
 }

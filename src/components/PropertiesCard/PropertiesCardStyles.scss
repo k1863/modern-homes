@@ -6,15 +6,12 @@
   overflow: hidden;
 
   @include respond(tab-1024) {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 2rem auto;
   }
 
   & h3 {
     padding: 0 2rem 0 2rem;
-  }
-  &:not(:last-child) {
-    margin-right: 5rem;
   }
 
   &__img-box {

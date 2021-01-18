@@ -1,6 +1,6 @@
 import React from "react";
 import sprite from "../../svg-icons/sprite.svg";
-import HomeCard from "../HomeCard/HomeCard";
+import PropertiesCard from "../PropertiesCard/PropertiesCard";
 import PropertyCardBig from "../PropertyCardBig/PropertyCardBig";
 
 import "../../sass/style.scss";
@@ -39,34 +39,40 @@ const FeaturedHomes = () => {
             size="2450sq"
             imgUrl="https://source.unsplash.com//_TPTXZd9mOo/900x600"
           />
-          <PropertyCardBig
-            className="property-card--big card-3"
-            address="422 Atlantic Lane Alliance, OH 44601"
-            baths=" 03"
-            size="2350sq"
-            price="$2540/mo"
-            bedrooms="04"
-            imgUrl="https://source.unsplash.com/2gDwlIim3Uw/900x700"
-          />
-          <PropertyCardBig
-            className="property-card--big card-4"
-            address="545 Front Dr.Thornton, CO 80241"
-            baths=" 03"
-            price="$2540/mo"
-            bedrooms="04"
-            size="2450sq"
-            imgUrl="https://source.unsplash.com//_TPTXZd9mOo/900x600"
-          />
         </div>
         <div className="home-card__box">
-          <HomeCard
+          <PropertiesCard
+            imgUrl="https://source.unsplash.com/L7EwHkq1B2s/800x600"
+            address="9193 Redwood Dr."
+            price="$3550"
+            bedrooms="05"
+            bathrooms="04"
+            location="North Haven, CT 06473"
+          />
+          <PropertiesCard
+            imgUrl="https://source.unsplash.com/9uH-hM0VwPg/800x600"
+            address="7091 Mulberry Court"
+            price="$3550"
+            bedrooms="05"
+            bathrooms="04"
+            location="Lumberton, NC 28358"
+          />
+          <PropertiesCard
+            imgUrl="https://source.unsplash.com/4HG3Ca3EzWw/800x600"
+            address="235 Pennington St."
+            price="$3550"
+            bedrooms="05"
+            bathrooms="04"
+            location="Portland, ME 04103"
+          />
+          {/*  <HomeCard
             imgUrl="https://source.unsplash.com/6sDuV840wxs/600x1000"
             propertyName="5412 Talbot St. Bridge, NJ 0587"
             price="$2245"
             bedrooms="05 bed"
             bathrooms="04 bath"
             size="1256 sq"
-          />
+          /> */}
           {/*  <HomeCard
             imgUrl="https://source.unsplash.com/L7EwHkq1B2s/800x600"
             propertyName="4352 City Way Manhattan, NY 0587"
