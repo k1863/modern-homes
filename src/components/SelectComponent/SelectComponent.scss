@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
   color: $color-primary-dark;
   width: 20rem;
+  cursor: pointer;
   @include input-search;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -27,14 +28,9 @@
 .views-widget::before {
   content: "";
   display: block;
-  border: 8px solid transparent;
+  border: 6px solid transparent;
   border-top-color: #ff9c65;
   position: absolute;
-  right: 6px;
-  top: calc(30% - 2px);
-}
-
-select option:hover {
-  background-color: #ff9c65 !important;
-  cursor: pointer;
+  right: 12px;
+  top: calc(30% - 1px);
 }

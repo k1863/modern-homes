@@ -12,6 +12,10 @@
     grid-template-rows: repeat(2, 15rem);
   }
 
+  @include respond(phone) {
+    width: 80%;
+  }
+
   &__img-box {
     height: 100%;
     position: relative;
@@ -75,8 +79,6 @@
   }
 
   &__label {
-    padding: 1rem 2rem;
-    margin-right: 2rem;
     background-color: $color-primary;
     border-radius: 6px;
     font-size: $default-font-size;
@@ -85,16 +87,16 @@
     color: $color-white;
     cursor: pointer;
     align-self: flex-end;
-    transform: translateY(-4.3rem);
+    transform: translateY(-4.4rem);
     transition: 0.2s all ease-in;
-
-    &:hover {
-      background-color: $color-primary-light;
-      color: $color-primary-dark;
-    }
 
     @include respond(phone) {
       padding: 1rem;
     }
+  }
+
+  &__label:hover {
+    background-color: $color-primary-light;
+    color: $color-primary-dark;
   }
 }

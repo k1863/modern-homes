@@ -2,7 +2,7 @@ import React from "react";
 import TestimonialsCard from "./TestimonialsCard";
 import { Fade } from "react-slideshow-image";
 
-import sprite from "../../svg-icons/eastwest.svg";
+import sprite from "../../svg-icons/sprite.svg";
 
 import "../../sass/style.scss";
 
@@ -24,14 +24,14 @@ const fadeProperties = {
   prevArrow: (
     <span className="testimonials__west-btn">
       <svg className="testimonials__icon">
-        <use href={sprite + "#icon-west"}></use>
+        <use href={sprite + "#chevron-circle-left"}></use>
       </svg>
     </span>
   ),
   nextArrow: (
     <span className="testimonials__east-btn">
       <svg className="testimonials__icon">
-        <use href={sprite + "#icon-east"}></use>
+        <use href={sprite + "#chevron-circle-right"}></use>
       </svg>
     </span>
   ),

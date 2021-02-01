@@ -47,7 +47,7 @@ const FeaturedHomes = () => {
             price="$3550"
             bedrooms="05"
             bathrooms="04"
-            location="North Haven, CT 06473"
+            size="North Haven, CT 06473"
           />
           <PropertiesCard
             imgUrl="https://source.unsplash.com/9uH-hM0VwPg/800x600"
@@ -55,7 +55,7 @@ const FeaturedHomes = () => {
             price="$3550"
             bedrooms="05"
             bathrooms="04"
-            location="Lumberton, NC 28358"
+            size="Lumberton, NC 28358"
           />
           <PropertiesCard
             imgUrl="https://source.unsplash.com/4HG3Ca3EzWw/800x600"
@@ -63,7 +63,7 @@ const FeaturedHomes = () => {
             price="$3550"
             bedrooms="05"
             bathrooms="04"
-            location="Portland, ME 04103"
+            size="Portland, ME 04103"
           />
           {/*  <HomeCard
             imgUrl="https://source.unsplash.com/6sDuV840wxs/600x1000"

@@ -1,6 +1,6 @@
 .testimonials {
   width: 65%;
-  margin: 10rem auto;
+  margin: 12rem auto;
   height: 90vh;
   position: relative;
 
@@ -59,7 +59,7 @@
     }
   }
   &__client--img {
-    width: 45%;
+    width: 35%;
     border-radius: 2rem;
     position: relative;
     z-index: 3;
@@ -82,7 +82,7 @@
 
   &__east-btn {
     position: absolute;
-    margin-top: 58%;
+    margin-top: 45%;
     left: 5rem;
     display: flex;
     justify-content: flex-start;
@@ -91,14 +91,11 @@
       margin-top: 0;
       top: 43rem;
     }
-    @include respond(phone) {
-      top: 32rem;
-    }
   }
 
   &__west-btn {
     position: absolute;
-    margin-top: 58%;
+    margin-top: 45%;
     left: 0rem;
     display: flex;
     justify-content: flex-start;
@@ -107,15 +104,11 @@
       margin-top: 0;
       top: 43rem;
     }
-
-    @include respond(phone) {
-      top: 32rem;
-    }
   }
 
   &__icon {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     fill: $color-primary-dark;
     cursor: pointer;
     transition: all 0.2s ease-in;
