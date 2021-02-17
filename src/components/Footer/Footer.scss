@@ -33,4 +33,32 @@
     font-size: $default-font-size;
     color: $color-primary-grey;
   }
+
+  &__payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
+
+.right__icon {
+  @include icon;
+  fill: $color-primary;
+}
+
+#paypal-icon {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
 }

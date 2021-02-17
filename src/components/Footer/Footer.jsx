@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../modern-homes-logo.svg";
-import sprite from "../../svg-icons/sprite.svg";
+import sprites from "../../svg-icons/sprites.svg";
+import paymentSprite from "../../svg-icons/payments-sprite.svg";
 import "../../sass/style.scss";
 
 const Footer = () => {
@@ -12,14 +13,14 @@ const Footer = () => {
           We are commited to helping you find the perfect home
         </p>
         <span className="footer__payment">
-          <svg className="property-card__icon">
-            <use href={sprite + "#mastercard"}></use>
+          <svg className="footer__icon">
+            <use href={paymentSprite + "#mastercard"}></use>
           </svg>
-          <svg className="property-card__icon">
-            <use href={sprite + "#paypal"}></use>
+          <svg className="footer__icon" id="paypal-icon">
+            <use href={paymentSprite + "#paypal"}></use>
           </svg>
-          <svg className="property-card__icon">
-            <use href={sprite + "#visa"}></use>
+          <svg className="footer__icon">
+            <use href={paymentSprite + "#visa"}></use>
           </svg>
         </span>
       </div>
@@ -60,16 +61,16 @@ const Footer = () => {
         </address>
         <span className="footer__social-icons">
           <svg className="right__icon">
-            <use href={sprite + "#icon-facebook"}></use>
+            <use href={sprites + "#icon-facebook"}></use>
           </svg>
           <svg className="right__icon">
-            <use href={sprite + "#icon-twitter"}></use>
+            <use href={sprites + "#icon-twitter"}></use>
           </svg>
           <svg className="right__icon">
-            <use href={sprite + "#icon-instagram"}></use>
+            <use href={sprites + "#icon-instagram"}></use>
           </svg>
           <svg className="right__icon">
-            <use href={sprite + "#icon-pinterest"}></use>
+            <use href={sprites + "#icon-pinterest"}></use>
           </svg>
         </span>
       </div>

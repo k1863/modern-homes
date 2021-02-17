@@ -1,8 +1,7 @@
 .how-we-help {
   width: 65%;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   margin: 10rem auto;
   justify-content: center;
   color: $color-primary-dark;
@@ -14,7 +13,7 @@
   }
 
   &__img-box {
-    width: 100%;
+    width: 35%;
     align-self: center;
   }
   &__img {
@@ -23,7 +22,7 @@
   }
 
   &__text-box {
-    width: 100;
+    width: 48%;
     align-self: center;
 
     & h2 {

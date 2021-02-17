@@ -6,6 +6,10 @@ import About from "./pages/About/About.jsx";
 import "./App.css";
 import "./sass/style.scss";
 import PropertiesPage from "./pages/PropertiesPage/PropertiesPage.jsx";
+import TopStrip from "./components/TopStrip/TopStrip.jsx";
+import Navigation from "./components/Navigation/Navigation.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import AgentsPage from "./pages/Agents/AgentsPage.jsx";
 
 class App extends React.Component {
   state = {
@@ -27,14 +31,21 @@ class App extends React.Component {
     console.log(listings);
     return (
       <div className="App">
+        <TopStrip />
+        <Navigation />
         <Switch>
-          <Route exact path="/" render={() => <Home {...this.state} />} />
+          <Route exact path="/" render={() => <Home listings={listings} />} />
           <Route path="/about" render={() => <About />} />
           <Route
             path="/properties"
             render={() => <PropertiesPage listings={listings} />}
           />
+          <Route
+            path="/agents"
+            render={() => <AgentsPage listings={listings} />}
+          />
         </Switch>
+        <Footer />
       </div>
     );
   }

@@ -32,9 +32,29 @@ const Navigation = () => {
           </NavLink>
         </li>
 
-        <li className="navigation__item push">Agents</li>
-        <li className="navigation__item">Blog</li>
-        <li className="navigation__item">Contact</li>
+        <li className="navigation__item push">
+          <NavLink
+            className="nav-link"
+            activeClassName="is-active"
+            to="/agents"
+          >
+            Agents
+          </NavLink>
+        </li>
+        <li className="navigation__item">
+          <NavLink className="nav-link" activeClassName="is-active" to="/blog">
+            Blog
+          </NavLink>
+        </li>
+        <li className="navigation__item">
+          <NavLink
+            className="nav-link"
+            activeClassName="is-active"
+            to="/contacts"
+          >
+            Contacts
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

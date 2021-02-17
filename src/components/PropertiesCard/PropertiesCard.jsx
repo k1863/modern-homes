@@ -1,6 +1,7 @@
 import React from "react";
 
 import sprites from "../../svg-icons/sprites.svg";
+import sprite2 from "../../svg-icons/sprite2.svg";
 
 import "../../sass/style.scss";
 
@@ -18,6 +19,9 @@ const PropertiesCard = ({
   return (
     <div className="properties-card">
       <div className="properties-card__img-box">
+        <svg className="properties-card__icon heart">
+          <use href={sprite2 + "#heart"}></use>
+        </svg>
         <img src={imgUrl} alt="property" className="properties-card__img" />
       </div>
       <div className="properties-card--footer">
@@ -27,33 +31,33 @@ const PropertiesCard = ({
         </div>
         <div className="properties-card__details">
           <span className="properties-card__item">
-            <svg className="property-card__icon">
+            <svg className="properties-card__icon">
               <use href={sprites + "#icon-bed"}></use>
             </svg>
             0{bedrooms} Bed
           </span>
           <span className="properties-card__item">
-            <svg className="property-card__icon">
+            <svg className="properties-card__icon">
               <use href={sprites + "#icon-bath"}></use>
             </svg>
             0{bathrooms} Bath
           </span>
           <span className="properties-card__item">
-            <svg className="property-card__icon">
+            <svg className="properties-card__icon">
               <use href={sprites + "#icon-photo_size_select_small"}></use>
             </svg>
-            {size}
+            {size} SQ
           </span>
         </div>
         <div className="properties-card__contacts">
           <button className="btn">View Details</button>
           <span className="properties-card__item icon-bg">
-            <svg className="property-card__icon icon-contact">
+            <svg className="properties-card__icon icon-contact">
               <use href={sprites + "#icon-email"}></use>
             </svg>
           </span>
           <span className="properties-card__item icon-bg">
-            <svg className="property-card__icon icon-contact">
+            <svg className="properties-card__icon icon-contact">
               <use href={sprites + "#icon-phone"}></use>
             </svg>
           </span>

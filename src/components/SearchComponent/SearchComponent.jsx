@@ -57,7 +57,7 @@ const SearchComponent = () => {
             />
           </div>
 
-          <button className="search_btn" type="submit">
+          <button className="search_btn btn" type="submit">
             <svg className="search-icon">
               <use href={sprite + "#icon-search"}></use>
             </svg>

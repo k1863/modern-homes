@@ -1,9 +1,8 @@
 .navigation {
   width: 100%;
-  height: 15vh;
+  height: 12rem;
   position: relative;
   padding: 0 10rem;
-  background-color: $color-grey-light;
   display: flex;
   align-items: center;
 
@@ -30,24 +29,25 @@
     align-items: center;
     flex-direction: column;
     color: $color-primary-dark;
-    font-size: 1.4rem;
-    flex: 0 0 10.67%;
+    font-size: 1.6rem;
     text-align: center;
     font-weight: 600;
-
-    &::after {
-      content: "";
-      border-bottom: 2px solid $color-primary;
-      padding-bottom: 2px;
-      overflow: hidden;
-      width: 50%;
-      transform: scaleX(0);
-      transition: all 0.5s cubic-bezier(1, 0, 0, 0.99);
+    position: relative;
+    cursor: pointer;
+    &:not(:first-child) {
+      margin-left: 8rem;
     }
 
-    &:hover {
-      color: $color-primary;
-      cursor: pointer;
+    &::after {
+      display: flex;
+      content: "";
+      border-bottom: 3px solid $color-primary;
+      position: absolute;
+      top: 2.5rem;
+      overflow: hidden;
+      width: 100%;
+      transform: scaleX(0);
+      transition: all 0.3s cubic-bezier(1, 0, 0, 0.99);
     }
 
     &:hover::after {
@@ -66,4 +66,21 @@
   .push {
     margin-left: auto;
   }
+}
+
+.nav-link {
+  text-decoration: none !important;
+  color: $color-primary-dark;
+  &:hover {
+    color: $color-primary;
+    cursor: pointer;
+  }
+
+  &:active ~ .navigation::after {
+    transform: scale(1);
+  }
+}
+
+.is-active {
+  color: $color-primary;
 }

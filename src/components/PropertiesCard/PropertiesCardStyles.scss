@@ -1,9 +1,19 @@
 .properties-card {
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: $color-grey-light;
-  box-shadow: $box-shadow-primary;
   overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  position: relative;
+
+  &:hover {
+    box-shadow: $box-shadow-primary;
+
+    .heart {
+      opacity: 1;
+    }
+  }
 
   @include respond(tab-1024) {
     width: 100%;
@@ -13,6 +23,21 @@
   &__img-box {
     width: 100%;
     min-height: 221.86px;
+    position: relative;
+
+    & .heart {
+      opacity: 0;
+      position: absolute;
+      right: 3rem;
+      top: 3rem;
+      height: 4rem;
+      width: 4rem;
+      fill: $color-primary;
+
+      &:hover {
+        fill: $color-primary-dark;
+      }
+    }
   }
 
   &--footer {
@@ -27,13 +52,17 @@
     }
   }
 
+  &__icon {
+    @include icon;
+    fill: $color-primary;
+  }
   &__img {
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
 
   &__details {
@@ -52,6 +81,9 @@
     align-items: center;
   }
 
+  &__details > &__item > &__icon {
+    margin-right: 1rem;
+  }
   &__contacts {
     display: flex;
     justify-content: space-around;
@@ -92,6 +124,10 @@
   width: 4rem;
   border-radius: 3px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary !important;
+  }
 }
 
 .icon-contact {

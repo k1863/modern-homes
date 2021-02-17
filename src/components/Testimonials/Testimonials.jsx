@@ -12,11 +12,11 @@ const images = [
   "images/client-3.jpg",
 ];
 
-const images2 = [
+/* const images2 = [
   "images/client-1s.jpg",
   "images/client-2s.jpg",
   "images/client-3s.jpg",
-];
+]; */
 
 const fadeProperties = {
   duration: 5000,
@@ -35,7 +35,7 @@ const fadeProperties = {
       </svg>
     </span>
   ),
-  indicators: (i) => (
+  /* indicators: (i) => (
     <div className="testimonials__client-avatars-box indicator">
       <img
         src={images2[i]}
@@ -43,7 +43,7 @@ const fadeProperties = {
         className="testimonials__client-avatar"
       />
     </div>
-  ),
+  ), */
 };
 
 const Testimonials = ({ clientName, clientTitle, imgUrl }) => {

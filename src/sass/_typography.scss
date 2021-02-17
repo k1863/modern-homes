@@ -1,8 +1,8 @@
 .heading-primary {
   font-size: 6rem;
   color: $color-white;
-  letter-spacing: 1px;
-  line-height: 1;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
   text-align: center;
 
   @include respond(phone) {

@@ -1,12 +1,17 @@
 import React from "react";
-import Navigation from "../../components/Navigation/Navigation";
+import HowWeHelp from "../../components/HowWeHelp/HowWeHelp";
+import AboutUs from "../../components/AboutUs/AboutUs";
+import CompanyLogos from "../../components/CompanyLogos/CompanyLogos";
+
 import "../../sass/style.scss";
 
 const About = () => {
   return (
-    <div>
-      <Navigation />
-      <h1>Welcome to About</h1>
+    <div className="about-page">
+      <AboutUs />
+
+      <HowWeHelp />
+      <CompanyLogos />
     </div>
   );
 };

@@ -150,17 +150,10 @@
   align-items: center;
   @include input-search;
   display: flex;
-  background-color: $color-primary-dark;
-  color: $color-primary-light;
-  font-weight: 500;
-  padding: 0;
   cursor: pointer;
 
   @include respond(phone) {
     width: 100%;
-  }
-  &:hover {
-    background-color: rgba($color-primary, 0.9);
   }
 }
 

@@ -1,9 +1,8 @@
 import React from "react";
 import SearchComponent from "../../components/SearchComponent/SearchComponent";
 import PropertiesCard from "../../components/PropertiesCard/PropertiesCard";
-import Navigation from "../../components/Navigation/Navigation";
 import { NavLink } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
+
 import "../../sass/style.scss";
 
 function PropertiesPage({ listings }) {
@@ -15,7 +14,6 @@ function PropertiesPage({ listings }) {
   }
   return (
     <div className="properties-page">
-      <Navigation />
       <div className="properties-page__header">
         <h2 className="page-link">
           <NavLink className="nav-link" activeClassName="is-active" to="/">
@@ -39,7 +37,6 @@ function PropertiesPage({ listings }) {
           />
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

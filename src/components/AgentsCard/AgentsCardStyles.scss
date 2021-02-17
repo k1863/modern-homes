@@ -1,0 +1,15 @@
+.agents-card {
+  &__img-box {
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+  }
+
+  & h3 {
+    font-size: 1.8rem;
+  }
+
+  & p {
+    font-size: 1.6rem;
+  }
+}

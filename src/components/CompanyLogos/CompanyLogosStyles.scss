@@ -1,0 +1,20 @@
+.company-logos {
+  width: 65%;
+  position: relative;
+  margin: 10rem auto;
+
+  & > h3 {
+    text-align: center;
+  }
+
+  & > span {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 10rem;
+  }
+}
