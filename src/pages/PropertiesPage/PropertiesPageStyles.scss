@@ -1,6 +1,10 @@
 .properties-page {
   width: 100%;
 
+  & h2 {
+    letter-spacing: 1px;
+  }
+
   &__header {
     width: 100%;
     height: 35rem;

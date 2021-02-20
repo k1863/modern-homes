@@ -10,6 +10,7 @@ import TopStrip from "./components/TopStrip/TopStrip.jsx";
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import AgentsPage from "./pages/Agents/AgentsPage.jsx";
+import ContactPage from "./pages/ContactPage/ContactPage.jsx";
 
 class App extends React.Component {
   state = {
@@ -35,7 +36,7 @@ class App extends React.Component {
         <Navigation />
         <Switch>
           <Route exact path="/" render={() => <Home listings={listings} />} />
-          <Route path="/about" render={() => <About />} />
+          <Route path="/about" component={About} />
           <Route
             path="/properties"
             render={() => <PropertiesPage listings={listings} />}
@@ -44,6 +45,7 @@ class App extends React.Component {
             path="/agents"
             render={() => <AgentsPage listings={listings} />}
           />
+          <Route path="/contacts" component={ContactPage} />
         </Switch>
         <Footer />
       </div>

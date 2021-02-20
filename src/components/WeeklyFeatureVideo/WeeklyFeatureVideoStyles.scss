@@ -66,8 +66,7 @@
   &__details {
     width: 65%;
     display: flex;
-    margin-top: 3.5rem;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
 
     @include respond(tab-port) {

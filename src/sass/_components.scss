@@ -2,8 +2,8 @@
   color: $color-white;
   background-color: $color-primary;
   border: none;
-  border-radius: 1rem;
-  padding: 1.2rem 1rem;
+  border-radius: 4rem;
+  padding: 1.2rem 3rem;
   font-weight: 500;
   font-size: 1.8rem;
   letter-spacing: 1px;
@@ -17,4 +17,36 @@
 
 .nav-link {
   text-decoration-style: none;
+}
+
+.page-link {
+  color: $color-white;
+}
+
+.input {
+  width: 48%;
+  padding: 1rem;
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  border: 1px solid $color-grey;
+
+  &::placeholder {
+    color: $color-black;
+  }
+}
+
+#textarea {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  border: 1px solid $color-grey;
+
+  &::placeholder {
+    color: $color-black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+  }
 }

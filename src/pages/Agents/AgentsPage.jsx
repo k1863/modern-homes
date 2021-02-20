@@ -37,10 +37,10 @@ const AgentsPage = ({ listings }) => {
 
   return (
     <div className="agents-page">
-      <div className="agents-page__header">
+      <div className="page-header">
         <h2 className="page-link">
           <NavLink className="nav-link" activeClassName="is-active" to="/">
-            Home
+            Home &nbsp;
           </NavLink>
           / Agents
         </h2>

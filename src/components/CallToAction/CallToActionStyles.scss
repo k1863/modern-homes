@@ -90,6 +90,9 @@
   }
 
   &__label {
+    left: 0;
+    bottom: 2rem;
+    position: absolute;
     background-color: $color-primary;
     border-radius: 6px;
     font-size: $default-font-size;
@@ -102,6 +105,9 @@
     transform: translateY(-4.4rem);
     transition: 0.2s all ease-in;
 
+    @include respond(tab-land) {
+      position: relative;
+    }
     @include respond(phone) {
       padding: 1rem;
       transform: translateY(0);

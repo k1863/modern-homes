@@ -14,7 +14,7 @@ function PropertiesPage({ listings }) {
   }
   return (
     <div className="properties-page">
-      <div className="properties-page__header">
+      <div className="page-header">
         <h2 className="page-link">
           <NavLink className="nav-link" activeClassName="is-active" to="/">
             Home
