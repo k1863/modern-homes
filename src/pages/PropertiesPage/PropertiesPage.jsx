@@ -1,42 +1,36 @@
-import React from "react";
 import SearchComponent from "../../components/SearchComponent/SearchComponent";
-import PropertiesCard from "../../components/PropertiesCard/PropertiesCard";
-import { NavLink } from "react-router-dom";
-
+import PageHeaderNav from "../../components/PageHeaderNav/PageHeaderNav";
+import PropertyItems from "../PropertyItems/PropertyItems";
+import LoadSpinner from "../../components/LoadingSpinner/LoadingSpinner";
+import { Route } from "react-router-dom";
+import PropertyDetailsPage from "../PropertyDetailsPage/PropertyDetailsPage";
 import "../../sass/style.scss";
 
-function PropertiesPage({ listings }) {
-  console.log(listings[0].mlsId);
+const PropertyItemsWithSpinner = LoadSpinner(PropertyItems);
+
+function PropertiesPage({ listings, loading, match }) {
+  const imageUrl =
+    "https://rcyneamb.sirv.com/page-header-bgs/pexels-expect-best-323780.jpg";
+
   function capitalize(s) {
     return s.toLowerCase().replace(/\b./g, function (a) {
       return a.toUpperCase();
     });
   }
+
   return (
     <div className="properties-page">
-      <div className="page-header">
-        <h2 className="page-link">
-          <NavLink className="nav-link" activeClassName="is-active" to="/">
-            Home
-          </NavLink>
-          / Properties
-        </h2>
-        <h1 className="heading-primary">Properties</h1>
-      </div>
+      <PageHeaderNav
+        currentPage="Properties"
+        className="properties-page__header"
+        imageUrl={imageUrl}
+      />
       <SearchComponent />
-      <div className="properties-page__grid">
-        {listings?.map((property) => (
-          <PropertiesCard
-            key={property.listingId}
-            imgUrl={property.photos[0]}
-            address={capitalize(property.address.full)}
-            price={property.listPrice}
-            bedrooms={property.property.bedrooms}
-            bathrooms={property.property.bathsFull}
-            size={property.property.area}
-          />
-        ))}
-      </div>
+      <PropertyItemsWithSpinner
+        capitalize={capitalize}
+        listings={listings}
+        isLoading={loading}
+      />
     </div>
   );
 }

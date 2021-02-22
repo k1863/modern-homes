@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 import sprites from "../../svg-icons/sprites.svg";
 import sprite2 from "../../svg-icons/sprite2.svg";
@@ -12,17 +13,24 @@ const PropertiesCard = ({
   bathrooms,
   price,
   size,
+  property,
+  history,
+  match,
 }) => {
   const format = (num) =>
     String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1,");
-
+  /*   const handleClick = () => {
+    console.log(property.mlsId);
+  }; */
   return (
     <div className="properties-card">
-      <div className="properties-card__img-box">
+      <div
+        className="properties-card__img-box"
+        style={{ backgroundImage: `url(${imgUrl})` }}
+      >
         <svg className="properties-card__icon heart">
           <use href={sprite2 + "#heart"}></use>
         </svg>
-        <img src={imgUrl} alt="property" className="properties-card__img" />
       </div>
       <div className="properties-card--footer">
         <h3>{address}</h3>
@@ -50,7 +58,15 @@ const PropertiesCard = ({
           </span>
         </div>
         <div className="properties-card__contacts">
-          <button className="btn">View Details</button>
+          <button
+            onClick={() => {
+              history.push(`${match.url}/${property.mlsId}`);
+              console.log(match.url);
+            }}
+            className="btn"
+          >
+            View Details
+          </button>
           <span className="properties-card__item icon-bg">
             <svg className="properties-card__icon icon-contact">
               <use href={sprites + "#icon-email"}></use>
@@ -67,4 +83,4 @@ const PropertiesCard = ({
   );
 };
 
-export default PropertiesCard;
+export default withRouter(PropertiesCard);

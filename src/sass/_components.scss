@@ -50,3 +50,13 @@
     font-size: 1.4rem;
   }
 }
+
+#contactComment {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  border: 1px solid $color-grey;
+  margin-bottom: 2rem;
+}

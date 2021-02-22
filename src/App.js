@@ -11,10 +11,12 @@ import Navigation from "./components/Navigation/Navigation.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import AgentsPage from "./pages/Agents/AgentsPage.jsx";
 import ContactPage from "./pages/ContactPage/ContactPage.jsx";
+import PropertyDetailsPage from "./pages/PropertyDetailsPage/PropertyDetailsPage.jsx";
 
 class App extends React.Component {
   state = {
-    listingData: [],
+    listings: [],
+    loading: true,
   };
 
   componentDidMount() {
@@ -25,10 +27,11 @@ class App extends React.Component {
     let res = await axios.get("https://api.simplyrets.com/properties", {
       auth: { username: "simplyrets", password: "simplyrets" },
     });
-    this.setState({ listingData: res.data });
+    this.setState({ listings: res.data });
+    this.setState({ loading: false });
   };
   render() {
-    const listings = this.state.listingData;
+    const { listings, loading } = this.state;
     console.log(listings);
     return (
       <div className="App">
@@ -38,8 +41,21 @@ class App extends React.Component {
           <Route exact path="/" render={() => <Home listings={listings} />} />
           <Route path="/about" component={About} />
           <Route
+            exact
             path="/properties"
-            render={() => <PropertiesPage listings={listings} />}
+            render={(props) => (
+              <PropertiesPage
+                loading={loading}
+                listings={listings}
+                {...props}
+              />
+            )}
+          />
+          <Route
+            path="/properties/:id"
+            render={(props) => (
+              <PropertyDetailsPage {...props} listings={listings} />
+            )}
           />
           <Route
             path="/agents"

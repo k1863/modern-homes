@@ -1,19 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../sass/style.scss";
+import PageHeaderNav from "../../components/PageHeaderNav/PageHeaderNav";
 
 const ContactPage = () => {
+  const imageUrl = "https://source.unsplash.com/khpWE85ge38/1800x800";
   return (
     <div className="contact-page">
-      <div className="page-header">
-        <h2 className="page-link">
-          <NavLink className="nav-link" activeClassName="is-active" to="/">
-            Home
-          </NavLink>
-          / Contacts
-        </h2>
-        <h1 className="heading-primary">Contact us</h1>
-      </div>
+      <PageHeaderNav
+        currentPage="Contact us"
+        className="contact-page__header"
+        imageUrl={imageUrl}
+      />
       <div className="contact-page__details">
         <div className="contact-page__img-wrapper">
           <img

@@ -1,9 +1,10 @@
 import React from "react";
 import "../../sass/style.scss";
-import { NavLink } from "react-router-dom";
+import PageHeaderNav from "../../components/PageHeaderNav/PageHeaderNav";
 import AgentsCard from "../../components/AgentsCard/AgentsCard";
 
 const AgentsPage = ({ listings }) => {
+  const imageUrl = "https://source.unsplash.com/khpWE85ge38/1800x800";
   const topLists = listings.slice(-8);
   const agentImages = [
     "https://rcyneamb.sirv.com/Agents/pexels-linkedin-sales-navigator-2182970.jpg",
@@ -37,15 +38,11 @@ const AgentsPage = ({ listings }) => {
 
   return (
     <div className="agents-page">
-      <div className="page-header">
-        <h2 className="page-link">
-          <NavLink className="nav-link" activeClassName="is-active" to="/">
-            Home &nbsp;
-          </NavLink>
-          / Agents
-        </h2>
-        <h1 className="heading-primary">Agents</h1>
-      </div>
+      <PageHeaderNav
+        currentPage="Agents"
+        className="agents-page__header"
+        imageUrl={imageUrl}
+      />
       <div className="agents-page__card-items">
         {topLists?.map((listing, index) => (
           <AgentsCard

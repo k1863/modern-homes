@@ -1,6 +1,16 @@
 .properties-page {
   width: 100%;
 
+  &__header {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba($color-black, 0.5),
+        rgba($color-black, 0.5)
+      ),
+      url("https://source.unsplash.com/khpWE85ge38/1800x800");
+    background-size: cover;
+  }
+
   & h2 {
     letter-spacing: 1px;
   }
@@ -19,16 +29,5 @@
       ),
       url("https://source.unsplash.com/khpWE85ge38/1800x800");
     background-size: cover;
-  }
-
-  &__grid {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    column-gap: 5rem;
-    row-gap: 5rem;
-    justify-items: center;
-    margin: 5rem auto;
   }
 }
