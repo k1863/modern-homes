@@ -17,11 +17,10 @@ const PropertiesCard = ({
   history,
   match,
 }) => {
+  console.log(size);
   const format = (num) =>
     String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1,");
-  /*   const handleClick = () => {
-    console.log(property.mlsId);
-  }; */
+
   return (
     <div className="properties-card">
       <div
@@ -35,20 +34,20 @@ const PropertiesCard = ({
       <div className="properties-card--footer">
         <h3>{address}</h3>
         <div className="properties-card__item">
-          <span className="properties-card__price">${format(price)}</span>
+          <span className="properties-card__price">{format(price)}</span>
         </div>
         <div className="properties-card__details">
           <span className="properties-card__item">
             <svg className="properties-card__icon">
               <use href={sprites + "#icon-bed"}></use>
             </svg>
-            0{bedrooms} Bed
+            {bedrooms} Bed
           </span>
           <span className="properties-card__item">
             <svg className="properties-card__icon">
               <use href={sprites + "#icon-bath"}></use>
             </svg>
-            0{bathrooms} Bath
+            {bathrooms} Bath
           </span>
           <span className="properties-card__item">
             <svg className="properties-card__icon">
