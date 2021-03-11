@@ -3,9 +3,10 @@ import PropertiesCard from "../../components/PropertiesCard/PropertiesCard";
 import "../../sass/style.scss";
 
 function PropertyItems({ listings, capitalize }) {
+  console.log(listings);
   return (
     <div className="properties-items__grid">
-      {listings?.map((property) => (
+      {listings.properties.map((property) => (
         <PropertiesCard
           key={property.listingId}
           imgUrl={property.photos[0]}

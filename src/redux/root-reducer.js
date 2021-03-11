@@ -13,7 +13,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   user: userReducer,
-  property: propertyReducer,
+  properties: propertyReducer,
 });
 
 export default persistReducer(persistConfig, rootReducer);
